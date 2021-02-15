@@ -24,9 +24,9 @@ class MqttConnect:
     def publish_message(self):
         print('Begin Publish')
         data = self.message
-        message = {"message": data}
-        self.myAWSIoTMQTTClient.publish(self.topic, json.dumps(message), 1)
-        print("Published: '" + json.dumps(message) + "' to the topic: " + "'test/testing'")
+        self.message = {"message": data}
+        self.myAWSIoTMQTTClient.publish(self.topic, json.dumps(self.message), 1)
+        print("Published: '" + json.dumps(self.message) + "' to the topic: " + "'test/testing'")
         t.sleep(0.1)
         print('Publish End')
 
