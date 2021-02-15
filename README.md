@@ -3,8 +3,8 @@ Conexión MQTT client con SDK AWS for Python
 
 Requerimientos:
 
-Python 3 o superior
+  Python 3 o superior
 
-pip install awsiotsdk
+  pip install awsiotsdk
 
-pip install AWSIoTPythonSDK
+  pip install AWSIoTPythonSDK
