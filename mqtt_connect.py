@@ -32,3 +32,9 @@ class MqttConnect:
 
         # disconnect
         self.myAWSIoTMQTTClient.disconnect()
+
+
+MqttConnect(client_id='TestDevice', endpoint='UrlCustom', path_to_key='path/to/key',
+            path_to_cert='path/to/cert',path_to_root='path/to/root', topic='topic/use', message='jsonMsg').connection()
+
+
